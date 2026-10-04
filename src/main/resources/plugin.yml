@@ -1,0 +1,25 @@
+name: BuildPlugin
+version: '${version}'
+main: dev.build.BuildPlugin
+api-version: '26.3'
+description: Система будівництва як у Rust
+commands:
+  upgrade:
+    description: Покращує частину будівлі, на яку ти дивишся
+    usage: /upgrade
+    permission: building.use
+  demolish:
+    description: Знищує частину будівлі, на яку ти дивишся
+    usage: /demolish
+    permission: building.use
+  plan:
+    description: Видає план будівництва (для адмінів)
+    usage: /plan
+    permission: building.admin
+permissions:
+  building.use:
+    description: Будувати, покращувати і ламати свої споруди
+    default: true
+  building.admin:
+    description: Видавати план, керувати чужими спорудами
+    default: op

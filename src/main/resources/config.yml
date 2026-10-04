@@ -1,0 +1,31 @@
+# true — у творчому режимі будувати безкоштовно
+creative-free: false
+# true — покращувати і знищувати може тільки власник (або building.admin)
+owner-only: true
+# Скільки відсотків вартості повертається при /demolish
+refund-percent: 50
+
+# Вартість у предметах: дерево — будь-які дошки, камінь — булижник,
+# залізо — залізні зливки, обсидіан — обсидіан.
+# /upgrade бере вартість наступного рівня.
+costs:
+  wood:
+    foundation: 20
+    wall: 15
+    floor: 15
+    doorway: 12
+  stone:
+    foundation: 25
+    wall: 20
+    floor: 20
+    doorway: 16
+  metal:
+    foundation: 12
+    wall: 10
+    floor: 10
+    doorway: 8
+  obsidian:
+    foundation: 12
+    wall: 10
+    floor: 10
+    doorway: 8
